@@ -1,0 +1,8 @@
+start
+    ## single line comment
+    declare Value = 10 ## inline comment
+    #* multi-line comment
+       with some text
+    *#
+    output "Done"
+finish

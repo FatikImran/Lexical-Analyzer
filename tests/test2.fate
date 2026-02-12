@@ -1,0 +1,14 @@
+function Sum
+    declare A = 2
+    declare B = 3
+    declare Power = A ** B
+    A++
+    B--
+    A += 5
+    B *= 2
+    condition (A == B || false) {
+        return A
+    } else {
+        return B
+    }
+finish

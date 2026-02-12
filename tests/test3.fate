@@ -1,0 +1,7 @@
+start
+    output "Tab\tSeparated"
+    output "Quote: \" inside"
+    output "Backslash: \\"
+    output 'Z'
+    output '\t'
+finish

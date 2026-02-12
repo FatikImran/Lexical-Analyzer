@@ -1,0 +1,12 @@
+start
+    declare count = 5
+    declare Bad_Id = 12
+    declare Toolongidentifiernameoverthirtyonechars = 1
+    declare BadFloat1 = 3.
+    declare BadFloat2 = 1.2345678
+    declare BadFloat3 = 1.2e
+    output "Unterminated string
+    output 'Unterminated char
+    output @
+#* Unclosed comment
+finish

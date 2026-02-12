@@ -1,0 +1,15 @@
+start
+    declare Count = 10
+    declare Total_1 = -5
+    declare Rate = 3.14
+    declare Small = 0.5E-3
+    output "Hello\nWorld"
+    output 'a'
+    output '\n'
+    condition (Count >= 0 && true) {
+        output "OK";
+    }
+    loop (Count > 0) {
+        Count -= 1;
+    }
+finish
