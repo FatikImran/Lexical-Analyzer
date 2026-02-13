@@ -1,0 +1,54 @@
+Automata Design - Regular Expressions (Fate Language)
+
+Keywords:
+(start|finish|loop|condition|declare|output|input|function|return|break|continue|else)
+
+Identifiers:
+[A-Z][a-z0-9_]{0,30}
+
+Integer Literals:
+[+-]?[0-9]+
+
+Floating-Point Literals:
+[+-]?[0-9]+\.[0-9]{1,6}([eE][+-]?[0-9]+)?
+
+String Literals:
+"([^"\n\r\\]|\\["\\ntr])*"
+
+Character Literals:
+'([^'\n\r\\]|\\['\\ntr])'
+
+Boolean Literals:
+(true|false)
+
+Operators:
+Arithmetic: (\*\*|[+\-*/%])
+Relational: (==|!=|<=|>=|<|>)
+Logical: (&&|\|\||!)
+Assignment: (\+=|-=|\*=|/=|=)
+Inc/Dec: (\+\+|--)
+
+Punctuators:
+[(){}\[\],;:]
+
+Comments:
+Single-line: ##[^\n]*
+Multi-line: #\*([^*]|\*+[^*#])*\*+#
+
+Whitespace (skip but track line/column):
+[ \t\r\n]+
+
+Priority Order (highest to lowest):
+1. Multi-line comments
+2. Single-line comments
+3. Multi-character operators (**, ==, !=, <=, >=, &&, ||, ++, --, +=, -=, *=, /=)
+4. Keywords
+5. Boolean literals
+6. Identifiers
+7. Floating-point literals
+8. Integer literals
+9. String literals
+10. Character literals
+11. Single-character operators
+12. Punctuators
+13. Whitespace

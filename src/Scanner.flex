@@ -126,4 +126,4 @@ WS = [ \t\r\n]+
 <COMMENT>"*#"   { yybegin(YYINITIAL); }
 <COMMENT>[\n\r] { commentBuffer.append(yytext()); }
 <COMMENT>.      { commentBuffer.append(yytext()); }
-<COMMENT><<EOF>> { return tokenAt(TokenType.ERROR, "#*" + commentBuffer, commentStartLine, commentStartColumn); }
+<COMMENT><<EOF>> { yybegin(YYINITIAL); return tokenAt(TokenType.ERROR, "#*" + commentBuffer, commentStartLine, commentStartColumn); }

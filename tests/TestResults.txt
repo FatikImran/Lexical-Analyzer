@@ -1,0 +1,399 @@
+﻿Test Results (Manual and JFlex)
+
+== Manual tests/test1.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "declare", Line: 2, Col: 5>
+<IDENTIFIER, "Count", Line: 2, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 2, Col: 19>
+<INT_LITERAL, "10", Line: 2, Col: 21>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<IDENTIFIER, "Total_1", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 21>
+<INT_LITERAL, "-5", Line: 3, Col: 23>
+<KEYWORD, "declare", Line: 4, Col: 5>
+<IDENTIFIER, "Rate", Line: 4, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 4, Col: 18>
+<FLOAT_LITERAL, "3.14", Line: 4, Col: 20>
+<KEYWORD, "declare", Line: 5, Col: 5>
+<IDENTIFIER, "Small", Line: 5, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 5, Col: 19>
+<FLOAT_LITERAL, "0.5E-3", Line: 5, Col: 21>
+<KEYWORD, "output", Line: 6, Col: 5>
+<STRING_LITERAL, "\"Hello\\nWorld\"", Line: 6, Col: 12>
+<KEYWORD, "output", Line: 7, Col: 5>
+<CHAR_LITERAL, "'a'", Line: 7, Col: 12>
+<KEYWORD, "output", Line: 8, Col: 5>
+<CHAR_LITERAL, "'\\n'", Line: 8, Col: 12>
+<KEYWORD, "condition", Line: 9, Col: 5>
+<PUNCTUATOR, "(", Line: 9, Col: 15>
+<IDENTIFIER, "Count", Line: 9, Col: 16>
+<OP_RELATIONAL, ">=", Line: 9, Col: 22>
+<INT_LITERAL, "0", Line: 9, Col: 25>
+<OP_LOGICAL, "&&", Line: 9, Col: 27>
+<BOOLEAN_LITERAL, "true", Line: 9, Col: 30>
+<PUNCTUATOR, ")", Line: 9, Col: 34>
+<PUNCTUATOR, "{", Line: 9, Col: 36>
+<KEYWORD, "output", Line: 10, Col: 9>
+<STRING_LITERAL, "\"OK\"", Line: 10, Col: 16>
+<PUNCTUATOR, ";", Line: 10, Col: 20>
+<PUNCTUATOR, "}", Line: 11, Col: 5>
+<KEYWORD, "loop", Line: 12, Col: 5>
+<PUNCTUATOR, "(", Line: 12, Col: 10>
+<IDENTIFIER, "Count", Line: 12, Col: 11>
+<OP_RELATIONAL, ">", Line: 12, Col: 17>
+<INT_LITERAL, "0", Line: 12, Col: 19>
+<PUNCTUATOR, ")", Line: 12, Col: 20>
+<PUNCTUATOR, "{", Line: 12, Col: 22>
+<IDENTIFIER, "Count", Line: 13, Col: 9>
+<OP_ASSIGNMENT, "-=", Line: 13, Col: 15>
+<INT_LITERAL, "1", Line: 13, Col: 18>
+<PUNCTUATOR, ";", Line: 13, Col: 19>
+<PUNCTUATOR, "}", Line: 14, Col: 5>
+<KEYWORD, "finish", Line: 15, Col: 1>
+
+Statistics:
+Total tokens: 49
+Lines processed: 16
+Comments removed: 0
+KEYWORD: 12
+IDENTIFIER: 7
+INT_LITERAL: 5
+FLOAT_LITERAL: 2
+STRING_LITERAL: 2
+CHAR_LITERAL: 2
+BOOLEAN_LITERAL: 1
+OP_RELATIONAL: 2
+OP_LOGICAL: 1
+OP_ASSIGNMENT: 5
+PUNCTUATOR: 10
+
+Symbol Table:
+Count | type= | first=2:13 | freq=4
+Total_1 | type= | first=3:13 | freq=1
+Rate | type= | first=4:13 | freq=1
+Small | type= | first=5:13 | freq=1
+
+== JFlex tests/test1.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "declare", Line: 2, Col: 5>
+<IDENTIFIER, "Count", Line: 2, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 2, Col: 19>
+<INT_LITERAL, "10", Line: 2, Col: 21>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<IDENTIFIER, "Total_1", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 21>
+<INT_LITERAL, "-5", Line: 3, Col: 23>
+<KEYWORD, "declare", Line: 4, Col: 5>
+<IDENTIFIER, "Rate", Line: 4, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 4, Col: 18>
+<FLOAT_LITERAL, "3.14", Line: 4, Col: 20>
+<KEYWORD, "declare", Line: 5, Col: 5>
+<IDENTIFIER, "Small", Line: 5, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 5, Col: 19>
+<FLOAT_LITERAL, "0.5E-3", Line: 5, Col: 21>
+<KEYWORD, "output", Line: 6, Col: 5>
+<STRING_LITERAL, "\"Hello\\nWorld\"", Line: 6, Col: 12>
+<KEYWORD, "output", Line: 7, Col: 5>
+<CHAR_LITERAL, "'a'", Line: 7, Col: 12>
+<KEYWORD, "output", Line: 8, Col: 5>
+<CHAR_LITERAL, "'\\n'", Line: 8, Col: 12>
+<KEYWORD, "condition", Line: 9, Col: 5>
+<PUNCTUATOR, "(", Line: 9, Col: 15>
+<IDENTIFIER, "Count", Line: 9, Col: 16>
+<OP_RELATIONAL, ">=", Line: 9, Col: 22>
+<INT_LITERAL, "0", Line: 9, Col: 25>
+<OP_LOGICAL, "&&", Line: 9, Col: 27>
+<BOOLEAN_LITERAL, "true", Line: 9, Col: 30>
+<PUNCTUATOR, ")", Line: 9, Col: 34>
+<PUNCTUATOR, "{", Line: 9, Col: 36>
+<KEYWORD, "output", Line: 10, Col: 9>
+<STRING_LITERAL, "\"OK\"", Line: 10, Col: 16>
+<PUNCTUATOR, ";", Line: 10, Col: 20>
+<PUNCTUATOR, "}", Line: 11, Col: 5>
+<KEYWORD, "loop", Line: 12, Col: 5>
+<PUNCTUATOR, "(", Line: 12, Col: 10>
+<IDENTIFIER, "Count", Line: 12, Col: 11>
+<OP_RELATIONAL, ">", Line: 12, Col: 17>
+<INT_LITERAL, "0", Line: 12, Col: 19>
+<PUNCTUATOR, ")", Line: 12, Col: 20>
+<PUNCTUATOR, "{", Line: 12, Col: 22>
+<IDENTIFIER, "Count", Line: 13, Col: 9>
+<OP_ASSIGNMENT, "-=", Line: 13, Col: 15>
+<INT_LITERAL, "1", Line: 13, Col: 18>
+<PUNCTUATOR, ";", Line: 13, Col: 19>
+<PUNCTUATOR, "}", Line: 14, Col: 5>
+<KEYWORD, "finish", Line: 15, Col: 1>
+
+== Manual tests/test2.fate ==
+<KEYWORD, "function", Line: 1, Col: 1>
+<IDENTIFIER, "Sum", Line: 1, Col: 10>
+<KEYWORD, "declare", Line: 2, Col: 5>
+<IDENTIFIER, "A", Line: 2, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 2, Col: 15>
+<INT_LITERAL, "2", Line: 2, Col: 17>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<IDENTIFIER, "B", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 15>
+<INT_LITERAL, "3", Line: 3, Col: 17>
+<KEYWORD, "declare", Line: 4, Col: 5>
+<IDENTIFIER, "Power", Line: 4, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 4, Col: 19>
+<IDENTIFIER, "A", Line: 4, Col: 21>
+<OP_ARITHMETIC, "**", Line: 4, Col: 23>
+<IDENTIFIER, "B", Line: 4, Col: 26>
+<IDENTIFIER, "A", Line: 5, Col: 5>
+<OP_INC_DEC, "++", Line: 5, Col: 6>
+<IDENTIFIER, "B", Line: 6, Col: 5>
+<OP_INC_DEC, "--", Line: 6, Col: 6>
+<IDENTIFIER, "A", Line: 7, Col: 5>
+<OP_ASSIGNMENT, "+=", Line: 7, Col: 7>
+<INT_LITERAL, "5", Line: 7, Col: 10>
+<IDENTIFIER, "B", Line: 8, Col: 5>
+<OP_ASSIGNMENT, "*=", Line: 8, Col: 7>
+<INT_LITERAL, "2", Line: 8, Col: 10>
+<KEYWORD, "condition", Line: 9, Col: 5>
+<PUNCTUATOR, "(", Line: 9, Col: 15>
+<IDENTIFIER, "A", Line: 9, Col: 16>
+<OP_RELATIONAL, "==", Line: 9, Col: 18>
+<IDENTIFIER, "B", Line: 9, Col: 21>
+<OP_LOGICAL, "||", Line: 9, Col: 23>
+<BOOLEAN_LITERAL, "false", Line: 9, Col: 26>
+<PUNCTUATOR, ")", Line: 9, Col: 31>
+<PUNCTUATOR, "{", Line: 9, Col: 33>
+<KEYWORD, "return", Line: 10, Col: 9>
+<IDENTIFIER, "A", Line: 10, Col: 16>
+<PUNCTUATOR, "}", Line: 11, Col: 5>
+<KEYWORD, "else", Line: 11, Col: 7>
+<PUNCTUATOR, "{", Line: 11, Col: 12>
+<KEYWORD, "return", Line: 12, Col: 9>
+<IDENTIFIER, "B", Line: 12, Col: 16>
+<PUNCTUATOR, "}", Line: 13, Col: 5>
+<KEYWORD, "finish", Line: 14, Col: 1>
+
+Statistics:
+Total tokens: 44
+Lines processed: 15
+Comments removed: 0
+KEYWORD: 9
+IDENTIFIER: 14
+INT_LITERAL: 4
+BOOLEAN_LITERAL: 1
+OP_ARITHMETIC: 1
+OP_RELATIONAL: 1
+OP_LOGICAL: 1
+OP_ASSIGNMENT: 5
+OP_INC_DEC: 2
+PUNCTUATOR: 6
+
+Symbol Table:
+Sum | type= | first=1:10 | freq=1
+A | type= | first=2:13 | freq=6
+B | type= | first=3:13 | freq=6
+Power | type= | first=4:13 | freq=1
+
+== JFlex tests/test2.fate ==
+<KEYWORD, "function", Line: 1, Col: 1>
+<IDENTIFIER, "Sum", Line: 1, Col: 10>
+<KEYWORD, "declare", Line: 2, Col: 5>
+<IDENTIFIER, "A", Line: 2, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 2, Col: 15>
+<INT_LITERAL, "2", Line: 2, Col: 17>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<IDENTIFIER, "B", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 15>
+<INT_LITERAL, "3", Line: 3, Col: 17>
+<KEYWORD, "declare", Line: 4, Col: 5>
+<IDENTIFIER, "Power", Line: 4, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 4, Col: 19>
+<IDENTIFIER, "A", Line: 4, Col: 21>
+<OP_ARITHMETIC, "**", Line: 4, Col: 23>
+<IDENTIFIER, "B", Line: 4, Col: 26>
+<IDENTIFIER, "A", Line: 5, Col: 5>
+<OP_INC_DEC, "++", Line: 5, Col: 6>
+<IDENTIFIER, "B", Line: 6, Col: 5>
+<OP_INC_DEC, "--", Line: 6, Col: 6>
+<IDENTIFIER, "A", Line: 7, Col: 5>
+<OP_ASSIGNMENT, "+=", Line: 7, Col: 7>
+<INT_LITERAL, "5", Line: 7, Col: 10>
+<IDENTIFIER, "B", Line: 8, Col: 5>
+<OP_ASSIGNMENT, "*=", Line: 8, Col: 7>
+<INT_LITERAL, "2", Line: 8, Col: 10>
+<KEYWORD, "condition", Line: 9, Col: 5>
+<PUNCTUATOR, "(", Line: 9, Col: 15>
+<IDENTIFIER, "A", Line: 9, Col: 16>
+<OP_RELATIONAL, "==", Line: 9, Col: 18>
+<IDENTIFIER, "B", Line: 9, Col: 21>
+<OP_LOGICAL, "||", Line: 9, Col: 23>
+<BOOLEAN_LITERAL, "false", Line: 9, Col: 26>
+<PUNCTUATOR, ")", Line: 9, Col: 31>
+<PUNCTUATOR, "{", Line: 9, Col: 33>
+<KEYWORD, "return", Line: 10, Col: 9>
+<IDENTIFIER, "A", Line: 10, Col: 16>
+<PUNCTUATOR, "}", Line: 11, Col: 5>
+<KEYWORD, "else", Line: 11, Col: 7>
+<PUNCTUATOR, "{", Line: 11, Col: 12>
+<KEYWORD, "return", Line: 12, Col: 9>
+<IDENTIFIER, "B", Line: 12, Col: 16>
+<PUNCTUATOR, "}", Line: 13, Col: 5>
+<KEYWORD, "finish", Line: 14, Col: 1>
+
+== Manual tests/test3.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "output", Line: 2, Col: 5>
+<STRING_LITERAL, "\"Tab\\tSeparated\"", Line: 2, Col: 12>
+<KEYWORD, "output", Line: 3, Col: 5>
+<STRING_LITERAL, "\"Quote: \\\" inside\"", Line: 3, Col: 12>
+<KEYWORD, "output", Line: 4, Col: 5>
+<STRING_LITERAL, "\"Backslash: \\\\\"", Line: 4, Col: 12>
+<KEYWORD, "output", Line: 5, Col: 5>
+<CHAR_LITERAL, "'Z'", Line: 5, Col: 12>
+<KEYWORD, "output", Line: 6, Col: 5>
+<CHAR_LITERAL, "'\\t'", Line: 6, Col: 12>
+<KEYWORD, "finish", Line: 7, Col: 1>
+
+Statistics:
+Total tokens: 12
+Lines processed: 8
+Comments removed: 0
+KEYWORD: 7
+STRING_LITERAL: 3
+CHAR_LITERAL: 2
+
+== JFlex tests/test3.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "output", Line: 2, Col: 5>
+<STRING_LITERAL, "\"Tab\\tSeparated\"", Line: 2, Col: 12>
+<KEYWORD, "output", Line: 3, Col: 5>
+<STRING_LITERAL, "\"Quote: \\\" inside\"", Line: 3, Col: 12>
+<KEYWORD, "output", Line: 4, Col: 5>
+<STRING_LITERAL, "\"Backslash: \\\\\"", Line: 4, Col: 12>
+<KEYWORD, "output", Line: 5, Col: 5>
+<CHAR_LITERAL, "'Z'", Line: 5, Col: 12>
+<KEYWORD, "output", Line: 6, Col: 5>
+<CHAR_LITERAL, "'\\t'", Line: 6, Col: 12>
+<KEYWORD, "finish", Line: 7, Col: 1>
+
+== Manual tests/test4.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "declare", Line: 2, Col: 5>
+<ERROR, "count", Line: 2, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 2, Col: 19>
+<INT_LITERAL, "5", Line: 2, Col: 21>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<ERROR, "Bad_Id", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 20>
+<INT_LITERAL, "12", Line: 3, Col: 22>
+<KEYWORD, "declare", Line: 4, Col: 5>
+<ERROR, "Toolongidentifiernameoverthirtyonechars", Line: 4, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 4, Col: 53>
+<INT_LITERAL, "1", Line: 4, Col: 55>
+<KEYWORD, "declare", Line: 5, Col: 5>
+<ERROR, "BadFloat1", Line: 5, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 5, Col: 23>
+<ERROR, "3.", Line: 5, Col: 25>
+<KEYWORD, "declare", Line: 6, Col: 5>
+<ERROR, "BadFloat2", Line: 6, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 6, Col: 23>
+<ERROR, "1.2345678", Line: 6, Col: 25>
+<KEYWORD, "declare", Line: 7, Col: 5>
+<ERROR, "BadFloat3", Line: 7, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 7, Col: 23>
+<ERROR, "1.2e", Line: 7, Col: 25>
+<KEYWORD, "output", Line: 8, Col: 5>
+<ERROR, "\"Unterminated string", Line: 8, Col: 12>
+<KEYWORD, "output", Line: 9, Col: 5>
+<ERROR, "'Unterminated char", Line: 9, Col: 12>
+<KEYWORD, "output", Line: 10, Col: 5>
+<ERROR, "@", Line: 10, Col: 12>
+<ERROR, "#* Unclosed comment\r\nfinish\r\n", Line: 11, Col: 1>
+
+Statistics:
+Total tokens: 32
+Lines processed: 13
+Comments removed: 0
+KEYWORD: 10
+INT_LITERAL: 3
+OP_ASSIGNMENT: 6
+ERROR: 13
+
+Errors:
+<InvalidIdentifier, Line: 2, Col: 13, "count", Identifier must start with an uppercase letter>
+<InvalidIdentifier, Line: 3, Col: 13, "Bad_Id", Identifier body contains uppercase letters>
+<InvalidIdentifier, Line: 4, Col: 13, "Toolongidentifiernameoverthirtyonechars", Identifier length exceeds 31 characters>
+<InvalidIdentifier, Line: 5, Col: 13, "BadFloat1", Identifier body contains uppercase letters>
+<MalformedLiteral, Line: 5, Col: 25, "3.", Missing digits after decimal point>
+<InvalidIdentifier, Line: 6, Col: 13, "BadFloat2", Identifier body contains uppercase letters>
+<MalformedLiteral, Line: 6, Col: 25, "1.2345678", Too many digits after decimal point>
+<InvalidIdentifier, Line: 7, Col: 13, "BadFloat3", Identifier body contains uppercase letters>
+<MalformedLiteral, Line: 7, Col: 25, "1.2e", Malformed exponent in floating literal>
+<MalformedLiteral, Line: 8, Col: 12, "\"Unterminated string", Unterminated string literal>
+<MalformedLiteral, Line: 9, Col: 12, "'Unterminated char", Invalid character literal>
+<InvalidCharacter, Line: 10, Col: 12, "@", Unrecognized character>
+<UnclosedComment, Line: 11, Col: 1, "#* Unclosed comment\r\nfinish\r\n", Unclosed multi-line comment>
+
+== JFlex tests/test4.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "declare", Line: 2, Col: 5>
+<ERROR, "count", Line: 2, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 2, Col: 19>
+<INT_LITERAL, "5", Line: 2, Col: 21>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<ERROR, "Bad_Id", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 20>
+<INT_LITERAL, "12", Line: 3, Col: 22>
+<KEYWORD, "declare", Line: 4, Col: 5>
+<ERROR, "Toolongidentifiernameoverthirtyonechars", Line: 4, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 4, Col: 53>
+<INT_LITERAL, "1", Line: 4, Col: 55>
+<KEYWORD, "declare", Line: 5, Col: 5>
+<ERROR, "BadFloat1", Line: 5, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 5, Col: 23>
+<ERROR, "3.", Line: 5, Col: 25>
+<KEYWORD, "declare", Line: 6, Col: 5>
+<ERROR, "BadFloat2", Line: 6, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 6, Col: 23>
+<ERROR, "1.2345678", Line: 6, Col: 25>
+<KEYWORD, "declare", Line: 7, Col: 5>
+<ERROR, "BadFloat3", Line: 7, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 7, Col: 23>
+<ERROR, "1.2e", Line: 7, Col: 25>
+<KEYWORD, "output", Line: 8, Col: 5>
+<ERROR, "\"Unterminated string", Line: 8, Col: 12>
+<KEYWORD, "output", Line: 9, Col: 5>
+<ERROR, "'Unterminated char", Line: 9, Col: 12>
+<KEYWORD, "output", Line: 10, Col: 5>
+<ERROR, "@", Line: 10, Col: 12>
+<ERROR, "#* Unclosed comment\r\nfinish\r\n", Line: 11, Col: 1>
+
+== Manual tests/test5.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<IDENTIFIER, "Value", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 19>
+<INT_LITERAL, "10", Line: 3, Col: 21>
+<KEYWORD, "output", Line: 7, Col: 5>
+<STRING_LITERAL, "\"Done\"", Line: 7, Col: 12>
+<KEYWORD, "finish", Line: 8, Col: 1>
+
+Statistics:
+Total tokens: 8
+Lines processed: 9
+Comments removed: 3
+KEYWORD: 4
+IDENTIFIER: 1
+INT_LITERAL: 1
+STRING_LITERAL: 1
+OP_ASSIGNMENT: 1
+
+Symbol Table:
+Value | type= | first=3:13 | freq=1
+
+== JFlex tests/test5.fate ==
+<KEYWORD, "start", Line: 1, Col: 1>
+<KEYWORD, "declare", Line: 3, Col: 5>
+<IDENTIFIER, "Value", Line: 3, Col: 13>
+<OP_ASSIGNMENT, "=", Line: 3, Col: 19>
+<INT_LITERAL, "10", Line: 3, Col: 21>
+<KEYWORD, "output", Line: 7, Col: 5>
+<STRING_LITERAL, "\"Done\"", Line: 7, Col: 12>
+<KEYWORD, "finish", Line: 8, Col: 1>

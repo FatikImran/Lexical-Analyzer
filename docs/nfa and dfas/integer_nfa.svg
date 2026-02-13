@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324pt" height="117pt" viewBox="0.00 0.00 324.00 117.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 113.19)">
+<title>IntNFA</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-113.19 319.53,-113.19 319.53,4 -4,4"/>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="black" stroke="black" cx="1.8" cy="-49.69" rx="1.8" ry="1.8"/>
+</g>
+<!-- q0 -->
+<g id="node2" class="node">
+<title>q0</title>
+<ellipse fill="none" stroke="black" cx="61.29" cy="-49.69" rx="20.69" ry="20.69"/>
+<text xml:space="preserve" text-anchor="middle" x="61.29" y="-45.49" font-family="Times,serif" font-size="14.00">q0</text>
+</g>
+<!-- start&#45;&gt;q0 -->
+<g id="edge1" class="edge">
+<title>start-&gt;q0</title>
+<path fill="none" stroke="black" d="M3.8,-49.69C7.06,-49.69 17.87,-49.69 29.17,-49.69"/>
+<polygon fill="black" stroke="black" points="28.86,-53.19 38.86,-49.69 28.86,-46.19 28.86,-53.19"/>
+</g>
+<!-- q2 -->
+<g id="node3" class="node">
+<title>q2</title>
+<ellipse fill="none" stroke="black" cx="290.83" cy="-49.69" rx="20.69" ry="20.69"/>
+<ellipse fill="none" stroke="black" cx="290.83" cy="-49.69" rx="24.69" ry="24.69"/>
+<text xml:space="preserve" text-anchor="middle" x="290.83" y="-45.49" font-family="Times,serif" font-size="14.00">q2</text>
+</g>
+<!-- q0&#45;&gt;q2 -->
+<g id="edge3" class="edge">
+<title>q0-&gt;q2</title>
+<path fill="none" stroke="black" d="M81.24,-56.36C87.16,-58.14 93.78,-59.81 99.99,-60.69 123.35,-64.03 163.79,-70.04 248.14,-59.69 250.51,-59.4 252.93,-59.03 255.37,-58.6"/>
+<polygon fill="black" stroke="black" points="256.07,-62.02 265.15,-56.55 254.64,-55.17 256.07,-62.02"/>
+<text xml:space="preserve" text-anchor="middle" x="171.35" y="-69.68" font-family="Times,serif" font-size="14.00">DIGIT</text>
+</g>
+<!-- q1 -->
+<g id="node4" class="node">
+<title>q1</title>
+<ellipse fill="none" stroke="black" cx="171.35" cy="-20.69" rx="20.69" ry="20.69"/>
+<text xml:space="preserve" text-anchor="middle" x="171.35" y="-16.49" font-family="Times,serif" font-size="14.00">q1</text>
+</g>
+<!-- q0&#45;&gt;q1 -->
+<g id="edge2" class="edge">
+<title>q0-&gt;q1</title>
+<path fill="none" stroke="black" d="M81.61,-44.51C97.8,-40.16 121.19,-33.89 139.9,-28.87"/>
+<polygon fill="black" stroke="black" points="140.62,-32.3 149.37,-26.32 138.81,-25.54 140.62,-32.3"/>
+<text xml:space="preserve" text-anchor="middle" x="116.32" y="-43.69" font-family="Times,serif" font-size="14.00">SIGN</text>
+</g>
+<!-- q2&#45;&gt;q2 -->
+<g id="edge5" class="edge">
+<title>q2-&gt;q2</title>
+<path fill="none" stroke="black" d="M279.54,-72.1C278.14,-82.87 281.91,-92.39 290.83,-92.39 296.41,-92.39 299.97,-88.67 301.52,-83.25"/>
+<polygon fill="black" stroke="black" points="305,-83.78 302.04,-73.61 298.01,-83.4 305,-83.78"/>
+<text xml:space="preserve" text-anchor="middle" x="290.83" y="-96.59" font-family="Times,serif" font-size="14.00">DIGIT</text>
+</g>
+<!-- q1&#45;&gt;q2 -->
+<g id="edge4" class="edge">
+<title>q1-&gt;q2</title>
+<path fill="none" stroke="black" d="M191.75,-25.48C209.02,-29.74 234.68,-36.08 255.42,-41.2"/>
+<polygon fill="black" stroke="black" points="254.34,-44.54 264.88,-43.54 256.01,-37.74 254.34,-44.54"/>
+<text xml:space="preserve" text-anchor="middle" x="229.09" y="-42.84" font-family="Times,serif" font-size="14.00">DIGIT</text>
+</g>
+</g>
+</svg>

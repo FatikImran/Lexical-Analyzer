@@ -2563,7 +2563,7 @@ class Yylex {
         zzAtEOF = true;
             switch (zzLexicalState) {
             case COMMENT: {
-              return tokenAt(TokenType.ERROR, "#*" + commentBuffer, commentStartLine, commentStartColumn);
+              yybegin(YYINITIAL); return tokenAt(TokenType.ERROR, "#*" + commentBuffer, commentStartLine, commentStartColumn);
             }  // fall though
             case 2112: break;
             case STRING: {

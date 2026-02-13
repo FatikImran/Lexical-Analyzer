@@ -80,7 +80,11 @@ public class ManualScanner {
         int startLine = line;
         int startColumn = column;
 
-        if (matchMultiLineComment(startLine, startColumn)) {
+        if (startsWith("#*")) {
+            Token commentToken = consumeMultiLineComment(startLine, startColumn);
+            if (commentToken != null) {
+                return commentToken;
+            }
             commentsRemoved++;
             return null;
         }
@@ -493,23 +497,20 @@ public class ManualScanner {
         return true;
     }
 
-    private boolean matchMultiLineComment(int startLine, int startColumn) {
-        if (!startsWith("#*")) {
-            return false;
-        }
+    private Token consumeMultiLineComment(int startLine, int startColumn) {
         int startIndex = index;
         advance(2);
         while (!isAtEnd()) {
             if (startsWith("*#")) {
                 advance(2);
-                return true;
+                return null;
             }
             advance(1);
         }
         String lexeme = input.substring(startIndex, index);
         errorHandler.report("UnclosedComment", startLine, startColumn, lexeme,
                 "Unclosed multi-line comment");
-        return true;
+        return new Token(TokenType.ERROR, lexeme, startLine, startColumn);
     }
 
     private boolean matchWhitespace() {

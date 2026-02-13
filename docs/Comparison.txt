@@ -1,0 +1,16 @@
+﻿Scanner Output Comparison
+
+== Compare tests/test1.fate ==
+Manual scanner and JFlex outputs match.
+
+== Compare tests/test2.fate ==
+Manual scanner and JFlex outputs match.
+
+== Compare tests/test3.fate ==
+Manual scanner and JFlex outputs match.
+
+== Compare tests/test4.fate ==
+Manual scanner and JFlex outputs match.
+
+== Compare tests/test5.fate ==
+Manual scanner and JFlex outputs match.
