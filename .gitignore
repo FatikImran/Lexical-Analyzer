@@ -15,3 +15,6 @@ Thumbs.db
 
 # Zip files
 *.zip
+
+# Submission staging folder
+submission/
