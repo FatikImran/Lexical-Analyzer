@@ -222,7 +222,7 @@ public class ManualScanner {
         }
 
         String lexeme = input.substring(startIndex, index);
-        symbolTable.addOrUpdate(lexeme, "", startLine, startColumn);
+        symbolTable.addOrUpdate(lexeme, "IDENTIFIER", startLine, startColumn);
         return new Token(TokenType.IDENTIFIER, lexeme, startLine, startColumn);
     }
 
