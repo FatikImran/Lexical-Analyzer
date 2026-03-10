@@ -1,0 +1,59 @@
+1. Regular Expressions
+RE (Fate Language)
+Keywords:
+(start|finish|loop|condition|declare|output|input|function|return|break|continue|else)
+1. Identifiers:
+[A-Z][a-z0-9_]{0,30}
+2. Integer Literals:
+[+-]?[0-9]+
+3. Floating-Point Literals:
+[+-]?[0-9]+\.[0-9]{1,6}([eE][+-]?[0-9]+)?
+4. String Literals:
+"([^"\n\r\\]|\\["\\ntr])*"
+5. Character Literals:
+'([^'\n\r\\]|\\['\\ntr])'
+6. Boolean Literals:
+(true|false)
+7. Operators:
+Arithmetic: (\*\*|[+\-*/%])
+Relational: (==|!=|<=|>=|<|>)
+Logical: (&&|\|\||!)
+Assignment: (\+=|-=|\*=|/=|=)
+Inc/Dec: (\+\+|--)
+8. Punctuators:
+[(){}\[\],;:]
+9. Comments:
+Single-line: ##[^\n]*
+Multi-line: #\*([^*]|\*+[^*#])*\*+#
+10. Whitespace (skip but track line/column):
+[ \t\r\n]+
+Priority Order (highest to lowest):
+1. Multi-line comments
+2. Single-line comments
+3. Multi-character operators (**, ==, !=, <=, >=, &&, ||, ++, --, +=, -=, *=, /=)
+4. Keywords
+5. Boolean literals
+6. Identifiers
+7. Floating-point literals
+8. Integer literals
+9. String literals
+10. Character literals
+11. Single-character operators
+12. Punctuators
+13. Whitespace
+2. NFA
+2.1 Arithmetic operators
+2.2 Boolean
+2.3 Float
+2.4 ID
+2.5 Integer
+2.6 Punctuator
+2.7 Single-line comment
+3. DFA
+3.1 Arithmetic operators
+3.2 Boolean
+3.3 Float
+3.4 ID
+3.5 Integer
+3.6 Punctuator
+3.7 Single-line comment
