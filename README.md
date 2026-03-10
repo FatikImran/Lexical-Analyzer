@@ -1,4 +1,4 @@
-# Fate Language Scanner (Assignment 1)
+# Fate Language Scanner
 
 ## Language Overview
 - Language name: Fate
